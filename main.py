@@ -1,6 +1,6 @@
 from pyscript import display, document
 
-def generateSKU(e):
+def generateSKU():
     document.getElementById("sku_output").innerHTML = ""
 
 

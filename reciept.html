@@ -70,38 +70,74 @@
             height: 40px;
             object-fit: contain;
         }
+        [type="checkbox"]
+{
+    vertical-align:middle;
+}
     </style>
 </head>
 <body>
     <form>
 
          <div class="container">
-            <h2> SmileOS 2.0 Devtools</h2>
-              <h4> P.S: Very minimal, the Terminals are mostly automated and we only added a way to manually add "products" for the investors.</h4> 
-              <p> p.s. REMOVE ALL THE P.S. STATEMENTS BEFORE WE START SHIPPING THESE OUT TO THE #### ###########</p>
- <label for="category">Product Category</label>
+            
 
-    <select id="category">
-        <option value="default">Choose One</option>
-        <option value="prize">Weapons</option>
-        <option value="info">Enemy Entry</option>
-        <option value="repair">Dynamic Repairs</option>
-        <option value="evil">gabriel bodypillow (evil option)</option>
-    </select>
-<br><br>
-<label for="product_name">Product Name</label>
-<input type="text" id="product_name" placeholder="Enter product name">
-<br><br>
-<label for="quantity">Stock Quantity</label>
 
-<input type="number" id="quantity" placeholder="Enter stock quantity">
-<br><br><br>
+<label for="item1">Marksman Revolver - 7500P
+    <input type="checkbox" id="item1" value="7500">
+</label>
+<br>
+<label for="item2">Sharpshooter Revolver - 25000P
+    <input type="checkbox" id="item2" value="25000">
+</label>
+<br>
+<label for="item3">Pump Charge Shotgun - 12500P
+    <input type="checkbox" id="item3" value="12500">
+</label>
+<br>
+<label for="item4">Sawed-On Shotgun - 25000P
+    <input type="checkbox" id="item4" value="25000">
+</label>
+<br>
+<label for="item5">Overheat Nailgun - 25000P
+    <input type="checkbox" id="item5" value="25000">
+</label>
+<br>
+<label for="item6">JumpStart Nailgun - 35000P
+    <input type="checkbox" id="item6" value="35000">
+</label>
+<br>
+<label for="item7">ScrewDriver - 100000P
+    <input type="checkbox" id="item7" value="100000">
+</label>
+<br>
+<label for="item8">Malicious Railcannon - 100000P
+    <input type="checkbox" id="item8" value="100000">
+</label>
+<br>
+<label for="item9">S.R.S. Cannon - 75000P
+    <input type="checkbox" id="item9" value="75000">
+</label>
+<br>
+<label for="item10">Firestarter R.L. - 75000P
+    <input type="checkbox" id="item10" value="75000">
+</label>
+<br>
+ 
+
+<br><br>
 <center>
 <button py-click="generateSKU">
-    Generate SKU
+    Print Receipt
 </button>
+<br><nav>
+        <a href="reciept.html">Manual SKU Generator</a>
+    </nav>
+
 </center><py-script src="main.py"></py-script>
-<div id="sku_output"></div>
+ 
+</button>
+<div id="print"></div>
 </div>
 
 </body>

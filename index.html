@@ -79,28 +79,33 @@
             <h2> SmileOS 2.0 Devtools</h2>
               <h4> P.S: Very minimal, the Terminals are mostly automated and we only added a way to manually add "products" for the investors.</h4> 
               <p> p.s. REMOVE ALL THE P.S. STATEMENTS BEFORE WE START SHIPPING THESE OUT TO THE #### ###########</p>
- <label for="category">Product Category</label>
+            <label for="category">Product Category</label>
 
-    <select id="category">
-        <option value="default">Choose One</option>
-        <option value="prize">Weapons</option>
-        <option value="info">Enemy Entry</option>
-        <option value="repair">Dynamic Repairs</option>
-        <option value="evil">gabriel bodypillow (evil option)</option>
-    </select>
+            <select id="category">
+                    <option value="default">Choose One</option>
+                    <option value="prize">Weapons</option>
+                    <option value="info">Enemy Entry</option>
+                    <option value="repair">Dynamic Repairs</option>
+                    <option value="evil">gabriel bodypillow (evil option)</option>
+            </select>
 <br><br>
-<label for="product_name">Product Name</label>
-<input type="text" id="product_name" placeholder="Enter product name">
+            <label for="product_name">Product Name</label>
+            <input type="text" id="product_name" placeholder="Enter product name">
 <br><br>
-<label for="quantity">Stock Quantity</label>
-
-<input type="number" id="quantity" placeholder="Enter stock quantity">
+            <label for="quantity">Stock Quantity</label>
+            <input type="number" id="quantity" placeholder="Enter stock quantity">
 <br><br><br>
 <center>
 <button py-click="generateSKU">
     Generate SKU
-</button>
-</center><py-script src="main.py"></py-script>
+</button><br>
+<nav>
+<a href="receipt.html">Receipt Printer</a>
+</nav>
+
+<py-script src="main.py"></py-script>
+</center>
+<br>
 <div id="sku_output"></div>
 </div>
 

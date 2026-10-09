@@ -1,6 +1,6 @@
 from pyscript import display, document
 
-def generateSKU():
+def generateSKU(e):
     document.getElementById("sku_output").innerHTML = ""
 
 
@@ -16,7 +16,7 @@ def generateSKU():
         sku = category[:3].upper() + "-" + product_name[:4].upper() + "-" + str(stock_qty)
         display("SKU: " + sku, target="sku_output")
 
-def print():
+def print(e):
     prod1 = document.getElementById("item1")
     prod2 = document.getElementById("item2")
     prod3 = document.getElementById("item3")
